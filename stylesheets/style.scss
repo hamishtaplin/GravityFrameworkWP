@@ -1,0 +1,132 @@
+/* --------------------------------------------------------------
+
+STYLE SCSS
+Author:
+Date:
+Author_URL:
+
+-------------------------------------------------------------- */
+
+@import "reset";
+@import "typography";
+@import "lib/tables";
+
+/* --------------------------------------------------------------
+
+Colors
+
+-------------------------------------------------------------- */
+
+$black:#000;
+$grey: #555;
+
+/* --------------------------------------------------------------
+
+General Classes
+
+-------------------------------------------------------------- */
+
+.serif {
+	font-family: $serif1;
+	font-style:italic;
+	color:$grey;
+}
+.clear {
+	clear: both;
+}
+.center {
+	text-align: center;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.titlecase {
+	text-transform: capitalize;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+	visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/* --------------------------------------------------------------
+
+Progressive Enhancement
+
+-------------------------------------------------------------- */
+
+@import "lib/mediaqueries";
+@import "lib/css3";
+
+/* --------------------------------------------------------------
+
+HTML5
+
+-------------------------------------------------------------- */
+
+section {
+	margin-bottom: 20px;
+	overflow:hidden;
+	border-bottom:1px solid #CCC;
+	padding-bottom:10px;
+}
+
+/* --------------------------------------------------------------
+
+Layout
+
+-------------------------------------------------------------- */
+
+body {
+	background: #FFF;
+}
+
+#container {
+	width: 940px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+/* --------------------------------------------------------------
+
+Columns
+
+-------------------------------------------------------------- */
+
+.col {
+	margin-right: 20px;
+	float: left
+}
+.whole {
+	width: 940px;
+	margin-right: 0;
+}
+.half {
+	width: 460px
+}
+.third {
+	width: 300px
+}
+.fourth {
+	width: 220px
+}
+.fifth {
+	width: 172px
+}
+.sixth {
+	width: 140px
+}
+.last {
+	margin-right: 0
+}

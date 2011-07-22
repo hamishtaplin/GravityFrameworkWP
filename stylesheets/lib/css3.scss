@@ -1,0 +1,51 @@
+/* --------------------------------------------------------------
+
+CSS3 Mixins for SASS
+
+-------------------------------------------------------------- */
+
+@mixin rounded($radius: 10px) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin roundedSides($topLeft, $topRight, $bottomRight, $bottomLeft) {
+	-moz-border-radius-topleft: $topLeft;
+	-moz-border-radius-topright: $topRight;
+	-moz-border-radius-bottomright: $bottomRight;
+	-moz-border-radius-bottomleft: $bottomLeft;
+	border-top-left-radius: $topLeft;
+	border-top-right-radius: $topRight;
+	border-bottom-right-radius: $bottomRight;
+	border-bottom-left-radius: $bottomLeft;
+}
+
+@mixin shadow( $off-y, $off-x, $blur, $color) {
+	-moz-box-shadow: $off-y $off-x $blur $color; /* FF3.5+ */
+	-webkit-box-shadow: $off-y $off-x $blur $color; /* Saf3.0+, Chrome */
+	box-shadow: $off-y $off-x $blur $color; /* Opera 10.5, IE9 */
+}
+
+@mixin gradient($baseColor, $toColor) {
+	background-color: $baseColor;
+	background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor)); /* Saf4+, Chrome */
+	background-image: linear-gradient(top,$baseColor, $toColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE */
+}
+
+@mixin trasition($property, $duration:0.3s, $function: ease-out) {
+	-moz-transition: $property $durations $function; /* FF3.7+ */
+	-o-transition: $property $durations $function; /* Opera 10.5 */
+	-webkit-transition: $property $durations $function; /* Saf3.2+, Chrome */
+	transition: $property $durations $function;
+}
+
+@mixin transform($scale, $rotate, $trans-x, $trans-y, $skew-x, $skew-y) {
+	-moz-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+	-webkit-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+	-o-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+	-ms-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+	transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+}

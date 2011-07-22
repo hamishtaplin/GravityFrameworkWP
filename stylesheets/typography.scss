@@ -1,0 +1,148 @@
+/* --------------------------------------------------------------
+
+TYPOGRAPHY CSS
+
+-------------------------------------------------------------- */
+
+/* Declare your base font families here */
+$serif1: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+$sans1: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+
+body {
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+}
+
+/* Default fonts and colors. */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
+	font-family: $sans1;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 1;
+}
+h2 {
+	font-size: 35px;
+	line-height: 1
+}
+h3 {
+	font-size: 30px;
+	line-height: 1
+}
+h4 {
+	font-size: 25px;
+	line-height: 1
+}
+h5 {
+	font-size: 20px;
+	line-height: 1
+}
+h6 {
+	font-size: 15px;
+	line-height: 1
+}
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p {
+	margin-bottom: 10px;
+}
+ul, ol {
+	margin-bottom: 20px;
+}
+ul {
+	list-style-type: circle;
+}
+ol {
+	list-style-type: decimal;
+}
+li {
+	margin-bottom: 5px;
+}
+
+dl {
+	margin-bottom: 10px;
+}
+dl dt {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+dl dd {
+	margin-bottom: 10px;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #000;
+}
+address {
+	font-style: italic;
+}
+del {
+	color: #000;
+}
+
+a {
+	color: #1c7fc4;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+blockquote {
+}
+strong {
+	font-weight: bold;
+}
+em, dfn {
+	font-style: italic;
+}
+dfn {
+	font-weight: bold;
+}
+pre, code {
+	margin: 10px 0;
+	white-space: pre;
+}
+pre, code, tt {
+	font: 1em monospace;
+	line-height: 1.5;
+}
+tt {
+	display: block;
+	margin: 10px 0;
+	line-height: 1.5;
+}
+
+q {
+	font-style: italic;
+	font-family: $serif1;
+	font-size: 16px;
+	font-weight: bold;
+}
+cite {
+	display: block;
+	font-weight: bold;
+	font-family: $sans1;
+	margin:10px 0;
+}
+
+
+/* Images
+-------------------------------------------------------------- */
+
+img {
+	margin-bottom: 20px;
+}
